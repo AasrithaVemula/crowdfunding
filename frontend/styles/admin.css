@@ -1,0 +1,250 @@
+.admin-page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+  font-family: "Avenir Next", "Segoe UI", Tahoma, sans-serif;
+}
+
+.admin-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.admin-title {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.admin-subtitle {
+  margin: 8px 0 0;
+  color: #526170;
+}
+
+.admin-refresh-btn {
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 16px;
+  background: #0f766e;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.admin-refresh-btn:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.admin-error-banner {
+  margin-bottom: 16px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.admin-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.admin-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px;
+  background: #ffffff;
+}
+
+.admin-card h2 {
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.admin-card p {
+  margin: 8px 0 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.admin-filter-panel {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.admin-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.admin-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-filter-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.admin-filter-group input,
+.admin-filter-group select {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+.admin-filter-group input:focus,
+.admin-filter-group select:focus {
+  outline: 2px solid #99f6e4;
+  border-color: #14b8a6;
+}
+
+.admin-clear-btn {
+  margin-top: 12px;
+  border: 1px solid #94a3b8;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #334155;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-clear-btn:hover {
+  background: #f1f5f9;
+}
+
+.admin-section {
+  margin-top: 24px;
+}
+
+.admin-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.admin-section-head h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #111827;
+}
+
+.admin-section-head span {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.admin-table-wrap {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow-x: auto;
+  background: #ffffff;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid #f1f5f9;
+  white-space: nowrap;
+}
+
+.admin-table thead th {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #64748b;
+}
+
+.admin-inline-link {
+  color: #0f766e;
+  text-decoration: none;
+}
+
+.admin-inline-link:hover {
+  text-decoration: underline;
+}
+
+.admin-danger-btn {
+  border: 1px solid #dc2626;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #dc2626;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.admin-danger-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.admin-muted-label {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.admin-empty-state {
+  color: #64748b;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .admin-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .admin-filter-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-header-row {
+    flex-direction: column;
+  }
+
+  .admin-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-title {
+    font-size: 28px;
+  }
+}

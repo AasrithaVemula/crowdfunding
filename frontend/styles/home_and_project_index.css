@@ -1,0 +1,11 @@
+.home-container {
+  width: auto;
+}
+
+.author-name {
+  display: flex;
+}
+
+.project-index-container {
+  display: flex;
+}
